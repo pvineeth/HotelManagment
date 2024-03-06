@@ -1,0 +1,44 @@
+.mynav {
+  background-color: #38D39f;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  
+}
+
+.mynav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.mynav ul li {
+  float: left;
+}
+.mynav ul li a {
+  display: block;
+  color: white; /* Change the text color as needed */
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+}
+.userActions
+{
+  float: right;
+}
+
+.userActions li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ .userActions li a:hover {
+  cursor:pointer;
+ }
+
+.mynav ul li a:hover, .userActions li a:hover {
+  background-color: #111; 
+}
+

@@ -1,0 +1,29 @@
+<nav class="mynav">
+  <ul class="navList">
+    <li>
+      <a class="mynav-brand" aria-current="page" [routerLink]="['/User']"><i class="fa-solid fa-house"></i>  STAY INN</a>
+    </li>
+    <li>
+      <a aria-current="page" [routerLink]="['/home']">Home</a>
+    </li>
+    <li>
+      <a aria-current="page" [routerLink]="['/tenants']"><i class="fa-solid fa-user-large"></i> Tenants</a>
+    </li>
+    <li>
+      <a aria-current="page" [routerLink]="['/rooms']"><i class="fa-solid fa-person-shelter"></i> Rooms</a>
+    </li>
+    <li>
+      <a aria-current="page" [routerLink]="['/User']"><i class="fa-solid fa-person-walking-luggage"></i> Guest</a>
+    </li>
+    <li>
+      <a aria-current="page" [routerLink]="['/User']"><i class="fa-solid fa-dollar-sign"></i> Spendings</a>
+    </li>
+  </ul>
+    <ul class="userActions">
+      <li>
+        <a (click)="LogOut()" ><i class="fa fa-sign-out"></i> LogOUT </a>
+      </li>
+    </ul>
+</nav>
+
+
