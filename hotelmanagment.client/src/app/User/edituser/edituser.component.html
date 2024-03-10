@@ -1,0 +1,28 @@
+<div class="container">
+  <h2>Add User</h2>
+  <form>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="Username" placeholder="Enter username">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="EmailId" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="Password" placeholder="Enter password">
+    </div>
+    <div class="form-group">
+      <label for="password">Mobile Number:</label>
+      <input type="text" id="password" name="password" [(ngModel)]="MbNumber" placeholder="Enter Mobile number">
+    </div>
+    <div class="form-group">
+      <select id="username" name="username" style="width: 100%;" [(ngModel)]="roleId">
+        <option disabled value="0">Select Role</option>
+        <option value="{{role.pkRoleId}}" *ngFor="let role of RoleNames">{{role.roleName}}</option>
+      </select>
+    </div>
+    <button type="submit" (click)="AddUser()" >Update User</button>
+  </form>
+</div>

@@ -13,7 +13,7 @@ namespace Models.Utility
         {
             ErrorMessage = string.Empty;
         }
-        public bool Success =>!string.IsNullOrEmpty(ErrorMessage)&& !string.IsNullOrWhiteSpace(ErrorMessage);
+        public bool Success =>string.IsNullOrEmpty(ErrorMessage)&& string.IsNullOrWhiteSpace(ErrorMessage);
         public string ErrorMessage {  get; set; }
     }
 }

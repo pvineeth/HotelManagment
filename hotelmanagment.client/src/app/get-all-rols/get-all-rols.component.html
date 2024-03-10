@@ -1,1 +1,26 @@
-<p>get-all-rols works!</p>
+<div class="TopNavgationbar">
+  <i class="fa fa-home myhome" [routerLink]="['/user']"></i> <i class="fa-solid fa-greater-than myicon"></i><span [routerLink]="['/role']" class="myspan">Roles</span>
+</div>
+
+<div class="Toolbar">
+  <div class="search-container">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input class="search-input" placeholder="Search..." />
+  </div>
+  <div class="Mybut">
+    <button class="btn" [routerLink]="['/addrole']">Add role</button>
+  </div>
+
+</div>
+
+<table>
+  <tr>
+    <th>Role Name</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let role of roleData.entities">
+    <td>{{role.roleName}}</td>
+    <td><i class="fa-regular fa-pen-to-square myicon" [routerLink]="['/editrole',role.pkRoleId]"></i> <i class="fa-solid fa-trash-can myicon" (click)="DeleteRole(role.pkRoleId)"></i></td>
+  </tr>
+</table>
+

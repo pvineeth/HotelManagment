@@ -12,6 +12,10 @@ import { GetALlRolsComponent } from './get-all-rols/get-all-rols.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { GetalltenantsComponent } from './Tenants/getalltenants/getalltenants.component';
 import { GetallroomsComponent } from './Rooms/getallrooms/getallrooms.component';
+import { AddroleComponent } from './addrole/addrole.component';
+import { AdduserComponent } from './User/adduser/adduser.component';
+import { EditroleComponent } from './editrole/editrole.component';
+import { EdituserComponent } from './User/edituser/edituser.component';
 
 
 
@@ -23,7 +27,11 @@ import { GetallroomsComponent } from './Rooms/getallrooms/getallrooms.component'
     GetUsersComponent,
     GetALlRolsComponent,
     DashboardComponent,
-    GetalltenantsComponent
+    GetalltenantsComponent,
+    AddroleComponent,
+    AdduserComponent,
+    EditroleComponent,
+    EdituserComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,
@@ -35,6 +43,11 @@ import { GetallroomsComponent } from './Rooms/getallrooms/getallrooms.component'
       {path:'home',component: DashboardComponent},
       {path:'tenants',component: GetalltenantsComponent},
       {path:'rooms',component: GetallroomsComponent},
+      {path:'addrole',component: AddroleComponent},
+      {path:'adduser',component: AdduserComponent},
+      {path:'edituser/:id',component: EdituserComponent},
+      {path:'users',component: GetUsersComponent},
+      {path:'editrole/:id',component: EditroleComponent},
       {path:'',component: GetUsersComponent},
       {path:'**',component: GetUsersComponent}
     ])

@@ -1,0 +1,113 @@
+/* Style the table */
+table {
+  width: 90%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin:auto;
+  margin-top:10px
+}
+
+/* Style table headers */
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: 10px;
+  text-align: left;
+  background-color: #38D39f; /* Green */
+  color: white;
+}
+
+/* Style table rows */
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+  /* Style even rows */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  /* Hover effect on rows */
+  tr:hover {
+    background-color: #ddd;
+  }
+
+/* Style table data cells */
+td {
+  padding: 8px;
+}
+.TopNavgationbar {
+  width: 90%;
+  box-sizing: border-box;
+  margin: auto;
+  border-radius: 5px;
+  color: black;
+  background-color: #D3D3D3;
+  margin-top: 5px;
+  padding: 3px
+}
+.myicon{
+    margin:10px;
+}
+.myhome{
+    cursor:pointer
+}
+.myspan{
+    cursor:pointer
+}
+.Toolbar {
+  background-color: #D3D3D3;
+  width:90%;
+  box-sizing:border-box;
+  margin:auto;
+  margin-top:10px;
+  border-radius:5px;
+  display:flex;
+  justify-content:space-between;
+ align-items:center;
+}
+  .Toolbar .Mybut{
+      margin-right:10px;
+  }
+.btn {
+  height: 35px;
+  width: 100px;
+  margin: 10px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  background-color: #38D39f;
+  font-size:1rem;
+}
+  .btn:hover {
+    background-color: #7BE5AD;
+  }
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Style for the search icon */
+.fa-magnifying-glass {
+  color: #999;
+  margin-right: 5px; 
+}
+
+/* Style for the search input */
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 5px;
+}
+.myicon{
+    margin-right:5px;
+}
+tr td .myicon{
+    cursor:pointer
+}

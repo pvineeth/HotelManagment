@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="RoleRepository\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ApplicationContext\ApplicationContext.csproj" />
     <ProjectReference Include="..\Models\Models.csproj" />
   </ItemGroup>

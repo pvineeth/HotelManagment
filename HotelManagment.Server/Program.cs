@@ -1,6 +1,8 @@
 using ApplicationContext;
 using Microsoft.EntityFrameworkCore;
 using Repositories.AuthenticationRepository;
+using Repositories.RoleRepository;
+using Repositories.UserRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<HotelManagmentContext>(x=>x.UseSqlServer(builder.Configuration.GetConnectionString("HotelManagmentContext")));
 
 builder.Services.AddTransient<IAuthenticationRepository,AuthenticationRepository>();
+builder.Services.AddTransient<IRoleRepository, RoleRepository>();
+builder.Services.AddTransient<IUserRepository, UserRepository>();
 var app = builder.Build();
 
 app.UseDefaultFiles();

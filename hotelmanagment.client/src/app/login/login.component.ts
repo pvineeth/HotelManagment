@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthenticationClient } from '../Sheared/api-service.service';
-import { LoginDTO } from '../Sheared/DTOs';
+import { AuthenticationClient, LoginDTO } from '../Sheared/api-service.service';
 import Swal from 'sweetalert2';
 import { AuthServiceService } from '../Sheared/auth-service.service';
 import { Router } from '@angular/router';
@@ -34,12 +33,13 @@ export class LoginComponent implements OnInit {
     this.LoginService.login(this.LoginDetails).subscribe(x => {
       if (x.success && x.token != null) {
         this.authServices.set_Auth_Token(x.token);
-        Swal.fire({
-          title: 'Success!',
-          text: "Your action was successful.",
-          icon: 'success',
-          allowOutsideClick: false,
-        }).then();
+        //Swal.fire({
+        //  title: 'Success!',
+        //  text: "Your action was successful.",
+        //  icon: 'success',
+        //  allowOutsideClick: false,
+        //}).then();
+        this.router.navigate(["/User"])
       }
       else {
         Swal.fire("Error", x.errorMessage?.toString(), "error");
