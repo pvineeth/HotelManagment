@@ -15,5 +15,7 @@ namespace ApplicationContext
 
         public DbSet<Role>Roles { get; set; }
         public DbSet<UserProfile>UserProfiles { get; set; }
+        public DbSet<Hostel>Hostels { get; set; }
+        public DbSet<Branch>Branches { get; set; }
     }
 }

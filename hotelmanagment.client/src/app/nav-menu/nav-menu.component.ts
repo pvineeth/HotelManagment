@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthServiceService } from '../Sheared/auth-service.service';
+import { AuthServiceService } from '../Shared/auth-service.service';
 import { Router } from '@angular/router';
 
 @Component({

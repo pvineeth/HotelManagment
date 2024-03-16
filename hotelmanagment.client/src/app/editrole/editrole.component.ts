@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { GetAllRolesDTO, RoleClient } from '../Sheared/api-service.service';
+import { GetAllRolesDTO, RoleClient } from '../Shared/api-service.service';
 import Swal from 'sweetalert2';
 
 @Component({

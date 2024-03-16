@@ -1,6 +1,8 @@
 using ApplicationContext;
 using Microsoft.EntityFrameworkCore;
 using Repositories.AuthenticationRepository;
+using Repositories.BranchRepository;
+using Repositories.HostelRepository;
 using Repositories.RoleRepository;
 using Repositories.UserRepository;
 
@@ -17,6 +19,8 @@ builder.Services.AddDbContext<HotelManagmentContext>(x=>x.UseSqlServer(builder.C
 builder.Services.AddTransient<IAuthenticationRepository,AuthenticationRepository>();
 builder.Services.AddTransient<IRoleRepository, RoleRepository>();
 builder.Services.AddTransient<IUserRepository, UserRepository>();
+builder.Services.AddTransient<IHostelReposirory, HostelReposirory>();
+builder.Services.AddTransient<IBranchRepositoty, BranchRepository>();
 var app = builder.Build();
 
 app.UseDefaultFiles();

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AddRoleDTO, RoleClient } from '../Sheared/api-service.service';
+import { AddRoleDTO, RoleClient } from '../Shared/api-service.service';
 import Swal from 'sweetalert2';
 import { Router } from '@angular/router';
 

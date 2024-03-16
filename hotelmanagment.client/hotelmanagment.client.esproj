@@ -8,10 +8,11 @@
     <PublishAssetsDirectory>$(MSBuildProjectDirectory)\dist\hotelmanagment.client\</PublishAssetsDirectory>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="src\app\Hostel\" />
     <Folder Include="src\app\User\" />
     <Folder Include="src\app\Rooms\" />
     <Folder Include="src\app\Tenants\" />
     <Folder Include="src\app\Users\" />
-    <Folder Include="src\app\Sheared\" />
+    <Folder Include="src\app\Shared\" />
   </ItemGroup>
 </Project>

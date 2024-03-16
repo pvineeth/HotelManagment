@@ -20,5 +20,8 @@ namespace Models
         [ForeignKey("FkRoleID")]
         public Role Role { get; set; }
         public string FkRoleID { get; set; }
+
+        [InverseProperty("UserProfile")]
+        public List<Branch> Branches { get; set; }
     }
 }

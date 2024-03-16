@@ -16,6 +16,9 @@ import { AddroleComponent } from './addrole/addrole.component';
 import { AdduserComponent } from './User/adduser/adduser.component';
 import { EditroleComponent } from './editrole/editrole.component';
 import { EdituserComponent } from './User/edituser/edituser.component';
+import { GetallhostelsComponent } from './Hostel/getallhostels/getallhostels.component';
+import { AddnewhostelComponent } from './Hostel/addnewhostel/addnewhostel.component';
+import { UpdatehostelComponent } from './Hostel/updatehostel/updatehostel.component';
 
 
 
@@ -31,7 +34,10 @@ import { EdituserComponent } from './User/edituser/edituser.component';
     AddroleComponent,
     AdduserComponent,
     EditroleComponent,
-    EdituserComponent
+    EdituserComponent,
+    GetallhostelsComponent,
+    AddnewhostelComponent,
+    UpdatehostelComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,
@@ -44,6 +50,9 @@ import { EdituserComponent } from './User/edituser/edituser.component';
       {path:'tenants',component: GetalltenantsComponent},
       {path:'rooms',component: GetallroomsComponent},
       {path:'addrole',component: AddroleComponent},
+      {path:'hostels',component: GetallhostelsComponent},
+      {path:'addhostel',component: AddnewhostelComponent},
+      {path:'edithostel/:id',component: UpdatehostelComponent},
       {path:'adduser',component: AdduserComponent},
       {path:'edituser/:id',component: EdituserComponent},
       {path:'users',component: GetUsersComponent},

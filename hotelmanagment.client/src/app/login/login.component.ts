@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthenticationClient, LoginDTO } from '../Sheared/api-service.service';
+import { AuthenticationClient, LoginDTO } from '../Shared/api-service.service';
 import Swal from 'sweetalert2';
-import { AuthServiceService } from '../Sheared/auth-service.service';
+import { AuthServiceService } from '../Shared/auth-service.service';
 import { Router } from '@angular/router';
 
 @Component({

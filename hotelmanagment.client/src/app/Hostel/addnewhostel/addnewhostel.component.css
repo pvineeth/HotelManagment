@@ -1,23 +1,17 @@
 .container {
-  width: 400px;
+  width: 500px;
   margin: 50px auto;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
-h2 {
-  text-align: center;
+h1{
+    text-align:center
 }
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
+label{
+    display:block;
+    margin-bottom:10px;
 }
 
 input[type="text"],
@@ -27,6 +21,7 @@ input[type="password"] {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  margin-bottom:10px;
 }
 
 button {
@@ -44,19 +39,3 @@ button {
   button:hover {
     background-color: #2db983;
   }
-#username {
-  width: 100%;
-  padding: 10px 5px; 
-  font-size: 16px; 
-  border: 1px solid #ccc; 
-  border-radius: 5px; 
-  background-color: #fff;
-  color: #333;
-}
-
-  
-  #username option[disabled] {
-    color: #999; 
-  }
-
-

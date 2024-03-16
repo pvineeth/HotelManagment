@@ -1,0 +1,25 @@
+<div class="TopNavgationbar">
+  <i class="fa fa-home myhome" [routerLink]="['/user']"></i> <i class="fa-solid fa-greater-than myicon"></i><span [routerLink]="['/hostels']" class="myspan">Hostels</span>
+</div>
+
+<div class="Toolbar">
+  <div class="search-container">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input class="search-input" placeholder="Search..." />
+  </div>
+  <div class="Mybut">
+    <button class="btn" [routerLink]="['/addhostel']">Add Hostel</button>
+  </div>
+
+</div>
+
+<table>
+  <tr>
+    <th>Hostel Name</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let hostel of hostelsList">
+    <td>{{hostel.hostelName}}</td>
+    <td><i class="fa-regular fa-pen-to-square myicon" [routerLink]="['/edithostel',hostel.pkHostelId]"></i> <i class="fa-solid fa-trash-can myicon"(click)="DeleteHostel(hostel.pkHostelId)" ></i></td>
+  </tr>
+</table>
